@@ -49,7 +49,7 @@ function! Timer()
 endfunction
 
 ruby << EOF
-dir = ::VIM::evaluate('&runtimepath').to_s.split(",").select{|s| s["vim-livereload"]}.first + "/vendor"
+dir = ::VIM::evaluate('&runtimepath').to_s.split(",").select{|s| s["livereload"]}.first + "/vendor"
 Dir.foreach(dir){|x| $LOAD_PATH.unshift(dir + "/" + x + "/lib")}
 require 'em/pure_ruby'
 require 'json'
