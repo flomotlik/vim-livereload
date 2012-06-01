@@ -1,0 +1,12 @@
+[submodule "vendor/em-websocket"]
+	path = vendor/em-websocket
+	url = https://github.com/igrigorik/em-websocket.git
+[submodule "vendor/addressable"]
+	path = vendor/addressable
+	url = https://github.com/sporkmonger/addressable.git
+[submodule "vendor/eventmachine"]
+	path = vendor/eventmachine
+	url = https://github.com/eventmachine/eventmachine.git
+[submodule "vendor/json"]
+	path = vendor/json
+	url = https://github.com/flori/json.git
