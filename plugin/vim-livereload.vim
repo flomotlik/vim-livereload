@@ -66,7 +66,7 @@ end
 def reload_browser
   name = VIM::Buffer.current.name
   data = ['refresh', {
-    :path           => name,
+    :path           => name.sub(".scss", ".css"),
     :apply_js_live  => @options[:apply_js_live],
     :apply_css_live => @options[:apply_css_live]
   }].to_json
