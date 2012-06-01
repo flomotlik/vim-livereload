@@ -42,7 +42,6 @@ command StartLivereload :call Startup()
 command StopLivereload :call Stop()
 
 autocmd CursorHold * call Timer()
-autocmd CursorHoldI * call Timer()
 
 function! Timer()
     :ruby timer
