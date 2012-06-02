@@ -73,7 +73,7 @@ def reload_browser
   Livereload.web_sockets.each do |ws|
     ws.send(data) if ws.state == :connected
   end
-  sleep 0.2
+  sleep 0.5
 end
 
 def startup
